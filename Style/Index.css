@@ -117,6 +117,7 @@ body {
     width: 100%;
 }
 
+/* Hide hamburger menu on desktop */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -124,6 +125,11 @@ body {
     color: var(--text-primary);
     font-size: var(--font-size-md);
     cursor: pointer;
+}
+
+/* Hide hamburger menu on desktop */
+#mobileMenuBtn {
+  display: none;
 }
 
 /* Hero Section */
@@ -554,6 +560,17 @@ textarea.form-input {
     .mobile-menu-btn {
         display: block;
     }
+
+    /* Show hamburger menu only on mobile */
+  #mobileMenuBtn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+    
 
     .hero-container {
         grid-template-columns: 1fr;
